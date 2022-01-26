@@ -11,7 +11,7 @@
           <img class="logo" src="https://place-hold.it/145x36" width="145" height="36" alt="Логотип интернет-магазина гаджетов 'Девайс'">
         </a>
         <form class="navigation-form" action="https://echo.htmlacademy.ru/courses" method="get">
-          <input type="text" name="search" placeholder="Текст поиска">
+          <input type="submit" name="search" placeholder="Текст поиска">
           <button class="navigation-form-button">Найти</button>
         </form>
         <ul class="navigation-list-user">
@@ -27,35 +27,21 @@
             <button class="navigation-button-user">Корзина</button>
           </li>
         </ul>
-        <ul>
-          <li class="navigation-item">
             <a class="navigation-link" href="catalog.html">Каталог товаров</a>
-          </li>
-          <li class="navigation-item">
             <button class="navigation-item-button">
-              <span class="visually-hidden">Плюс</span>
+              <span class="visually-hidden">Открыть выпадающее меню</span>
             </button>
-          </li>
+        <ul class="dropdown-list-category">
+          <li class="dropdown-item">Виртуальная реальность</li>
+          <li class="dropdown-item">Моноподы для селфи</li>
+          <li class="dropdown-item">Экшн-камеры</li>
         </ul>
-        <ul class="dropdown visually-hidden">
-          <li class="dropdown-list">
-            <ul class="dropdown-category">
-              <li class="dropdown-item">Виртуальная реальность</li>
-              <li class="dropdown-item">Моноподы для селфи</li>
-              <li class="dropdown-item">Экшн-камеры</li>
-            </ul>
-          </li>
-          <li class="dropdown-list">
-            <ul class="dropdown-category">
-              <li class="dropdown-item">Фитнес-браслеты</li>
-              <li class="dropdown-item">Умные часы</li>
-            </ul>
-          </li>
-          <li class="dropdown-list">
-            <ul class="dropdown-category">
-              <li class="dropdown-item">Квадрокоптеры</li>
-            </ul>
-          </li>
+        <ul class="dropdown-list-category">
+          <li class="dropdown-item">Фитнес-браслеты</li>
+          <li class="dropdown-item">Умные часы</li>
+        </ul>
+        <ul class="dropdown-list-category">
+          <li class="dropdown-item">Квадрокоптеры</li>
         </ul>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -73,6 +59,7 @@
     <main class="main-index">
       <h1 class="visually-hidden">Интернет-магазина гаджетов 'Девайс'</h1>
       <section class="slider">
+        <h2 class="visually-hidden">Популярные товары</h2>
         <button class="slider-button-forward">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
@@ -92,11 +79,12 @@
         </button>
         <ol class="slider-list">
           <li class="slider-item">
+            <h3 class="visually-hidden">Квадрокоптер</h3>
             <p class="slider-header">Порхает как бабочка, жалит как пчела!</p>
             <p class="slider-description">
               Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
             </p>
-            <a class="button" href="catalog.html">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <dl class="slider-specifications">
               <dd>800 м</dd>
               <dt>Дальность полета</dt>
@@ -107,22 +95,24 @@
             </dl>
           </li>
           <li class="slider-item">
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
             <p class="slider-header">Худеем правильно!</p>
             <p class="slider-description">
               Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.
             </p>
-            <a class="button" href="catalog.html">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <dl class="slider-specifications">
               <dd>48 часов</dd>
               <dt>Без подзарядки</dt>
             </dl>
           </li>
           <li class="slider-item">
+            <h3 class="visually-hidden">Селфи-палка</h3>
             <p class="slider-header">Делай селфи, как Бен Стиллер! </p>
             <p class="slider-description">
               Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 кг.
             </p>
-            <a class="button" href="catalog.html">Подробнее</a>
+            <a class="button" href="#">Подробнее</a>
             <dl class="slider-specifications">
               <dd>8,5 м</dd>
               <dt>Длина палки</dt>
@@ -142,22 +132,22 @@
         <h2 class="visually-hidden">Категории</h2>
         <ul class="category-list">
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Виртуальная реальность</a>
+            <a href="#" class="category-description">Виртуальная реальность</a>
           </li>
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Моноподы для селфи</a>
+            <a href="#" class="category-description">Моноподы для селфи</a>
           </li>
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Экшн-камеры</a>
+            <a href="#" class="category-description">Экшн-камеры</a>
           </li>
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Фитнес-браслеты</a>
+            <a href="#" class="category-description">Фитнес-браслеты</a>
           </li>
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Умные часы</a>
+            <a href="#" class="category-description">Умные часы</a>
           </li>
           <li class="category-item">
-            <a href="catalog.html" class="category-description">Квадрокоптеры</a>
+            <a href="#" class="category-description">Квадрокоптеры</a>
           </li>
         </ul>
       </section>
@@ -184,9 +174,9 @@
           </li>
         </ol>
       </section>
-      <section class="offer">
+      <div class="offer">
         <a class="offer-description" href="#">Доставим редкий товар под заказ</a>
-      </section>
+      </div>
       <section class="about">
         <h2>О нас</h2>
         <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -207,7 +197,7 @@
         <p class="contacts-description">Санкт-Петербург, набережная реки Карповки, 5, литера П. +7 (812) 812-12-12</p>
         <h3 class="contacts">Время работы</h3>
         <p class="contacts-description">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
-        <button class="button">Напишите нам</button>
+        <a class="button" href="#">Напишите нам</a>
       </section>
       <section class="newsletter">
         <h2 class="appointment-title">Подпишитесь на рассылку</h2>
@@ -215,11 +205,9 @@
           длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
-            <button class="button newsletter-button" type="submit">
-              <span class="visually-hidden">Подписаться</span>
-            </button>
+            <button class="button newsletter-button" type="submit">Подписаться</button>
+            <span>Это бесплатно</span>
           </form>
-          <span>Это бесплатно</span>
       </section>
     </main>
     <footer class="page-footer">
@@ -267,7 +255,6 @@
           <img class="logo" src="https://place-hold.it/115x33" width="115" height="33" alt="Логотип .html academy">
         </a>
       </section>
-
     </footer>
   </body>
 </html>
