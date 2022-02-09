@@ -1,0 +1,234 @@
+@font-face {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 800;
+    src: url("../fonts/rubik/rubik-800.woff2") format("woff2");
+    font-display: swap;
+}
+
+/* глобальное */
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 30px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.button {
+    line-height: 21px;
+    color: #000000;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+/* pages */
+
+.page-header {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* header */
+
+.navigation-form-button {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #000000;
+    background: none;
+    border: none;
+}
+
+.navigation-link {
+    font-weight: 800;
+    line-height: 21px;
+    color: inherit;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.dropdown-item {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+/* main */
+
+.main-index {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.slider-header {
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.slider-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+.slider-specifications {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #444444;
+    background-color: #ffffff;
+}
+
+.slider-specifications dd {
+    font-size: 36px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.category-description {
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.button-tabs {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.active {
+    color: #FFE17F;
+    background-color: #000000;
+}
+
+.services-link {
+    font-size: 50px;
+    line-height: 50px;
+    color: #000000;
+    text-decoration: none;
+}
+
+.services-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.offer-description {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+    background: #F0F0F0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.contacts-title {
+    font-size: 50px;
+    font-weight: 50px;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.contacts-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.contacts h3 {
+    font-size: 24px;
+    color: #444444;
+}
+
+.contacts-description-tel {
+    text-decoration-line: underline;
+}
+
+.newsletter {
+    color: #000000;
+    background: #F0F0F0;
+}
+
+.appointment-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.appointment-description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.page-footer {
+    color: #ffffff;
+    background: #444444;
+}
+
+.about-text {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer-services-link {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.footer-phone .about-text {
+    color: #FFFFFF;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigation {
+    background-color: #FFE17F ;
+    width: 1160px;
+    margin: 0 auto;
+}
