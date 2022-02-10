@@ -6,13 +6,13 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <header class="page-header">
+    <header>
       <nav class="navigation">
         <a href="index.html">
           <img class="logo" src="images/logo/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов 'Девайс'">
         </a>
         <form class="navigation-form" action="https://echo.htmlacademy.ru" method="get">
-          <input type="submit" name="search" placeholder="Текст поиска">
+          <input type="search" name="search" placeholder="Текст поиска">
           <button class="navigation-form-button">Найти</button>
         </form>
         <ul class="navigation-list-user">
@@ -61,9 +61,9 @@
       </nav>
     </header>
     <main class="main-inner">
-      <header class="inner-header">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
+      <header>
+        <h1 class="high-fonts">Моноподы для селфи</h1>
+        <ol class="breadcrumbs">
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link" href="index.html">Главная</a>
           </li>
@@ -73,7 +73,7 @@
           <li class="breadcrumbs-item">
             <a class="breadcrumbs-link">Моноподы для селфи</a>
           </li>
-        </ul>
+        </ol>
       </header>
       <section class="catalog-products">
         <h2 class="visually-hidden">Список товаров с фильтрами</h2>
@@ -131,7 +131,9 @@
               </li>
             </ul>
           </fieldset>
-          <button class="button" type="submit">Показать</button>
+          <button class="grey-button" type="submit">
+            <span class="pagination-span">Показать</span>
+          </button>
         </form>
         <h3 class="catalog-filter">сортировка:</h3>
         <select class="select-control">
@@ -151,63 +153,60 @@
               <img class="product-card-image" src="images/catalog/amateur-selfie-stick.jpg" width="360" height="380" alt="Черная селфи-палка с пластмассовым зажимом для смартфона и кнопкой для беспроводной сьемки">
               <h4 class="product-card-title">Любительская селфи-палка</h4>
             </a>
-            <span class="product-card-price">500 ₽</span>
+            <span class="product-card-price description">500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/professional-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка с автоматическим зажимом для смартфона и подсветкой кнопки для беспроводной сьемки">
               <h4 class="product-card-title">Профессиональная селфи-палка</h4>
             </a>
-            <span class="product-card-price">1 500 ₽</span>
+            <span class="product-card-price description">1 500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/unsinkable-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка с широкой ручкой и желтыми декоративными элементами, не тонет в воде">
               <h4 class="product-card-title">Непотопляемая селфи-палка</h4>
             </a>
-            <span class="product-card-price">2 500 ₽</span>
+            <span class="product-card-price description">2 500 ₽</span>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
               <img class="product-card-image" src="images/catalog/hand-selfie-stick.jpg" width="360" height="380" alt="Селфи-палка с ручкой в форме руки манекена">
               <h4 class="product-card-title">Селфи-палка «Следуй за мной»</h4>
             </a>
-            <span class="product-card-price">1 500 ₽</span>
+            <span class="product-card-price description">1 500 ₽</span>
           </li>
         </ul>
-        <button class="button pagination-show-more" type="button">Загрузить ещё</button>
-        <ol class="pagination">
+        <button class="button" type="button">
+          <span class="download-span">Загрузить ещё</span>
+        </button>
+      </section>
+      <section class="pagination">
+        <h2 class="visually-hidden">Нумерация страниц</h2>
+        <button class="grey-button" type="button">
+          <span class="pagination-span">Назад</span>
+        </button>
+        <ol class="pagination-list">
           <li class="pagination-item">
-            <a class="pagination-link pagination-prev pagination-disabled" href="#">
-              <span class="visually-hidden">Назад</span>
-            </a>
+            <a class="pagination-link description" href="#">1</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link description" href="#">2</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">1</a>
+            <a class="pagination-link description" href="#">3</a>
           </li>
           <li class="pagination-item">
-            <a class="pagination-link">2</a>
+            <a class="pagination-link description" href="#">...</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-link">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">...</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link">15</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link pagination-next" href="#">
-              <span class="visually-hidden">Вперёд</span>
-            </a>
+          <li class="pagination-item" href="#" value="15">
+            <a class="pagination-link description">15</a>
           </li>
         </ol>
+        <button class="grey-button" type="button">
+          <span class="pagination-span">Вперёд</span>
+        </button>
       </section>
-
     </main>
     <footer class="page-footer">
       <a href="index.html">
@@ -242,7 +241,7 @@
           </a>
         </li>
       </ul>
-      <a class="footer-contacts-address-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
+      <a class="footer-phone" href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <a href="https://htmlacademy.ru/">
         <img class="logo" src="images/logo/logo-htmlacademy.svg" width="115" height="33" alt="Логотип разработчика учебного макета, онлайн-курсов html academy">
       </a>

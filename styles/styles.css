@@ -38,7 +38,7 @@ body {
     font-size: 18px;
     line-height: 30px;
     color: #000000;
-    background-color: #ffffff;
+    margin: 0;
 }
 
 .button {
@@ -47,13 +47,22 @@ body {
     background-color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
+    border: none;
 }
 
-/* pages */
-
-.page-header {
+.grey-button {
+    line-height: 21px;
     color: #000000;
-    background-color: #ffffff;
+    text-decoration: none;
+    border: none;
+}
+
+.pagination-span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
 }
 
 /* header */
@@ -61,7 +70,6 @@ body {
 .navigation-form-button {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    color: #000000;
     background: none;
     border: none;
 }
@@ -69,8 +77,7 @@ body {
 .navigation-link {
     font-weight: 800;
     line-height: 21px;
-    color: inherit;
-    background-color: #ffffff;
+    color: #000000;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -84,37 +91,15 @@ body {
 
 /* main */
 
-.main-index {
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.slider-header {
-    font-size: 50px;
-    line-height: 50px;
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.slider-description {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #444444;
-    background-color: #ffffff;
-}
-
 .slider-specifications {
     font-family: "Rubik", sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    color: #444444;
-    background-color: #ffffff;
+    font-size: 36px;
 }
 
-.slider-specifications dd {
-    font-size: 36px;
-    color: #000000;
-    background-color: #ffffff;
+.slider-specifications-low {
+    font-size: 16px;
+    color: #444444;
 }
 
 .category-description {
@@ -131,6 +116,7 @@ body {
     text-transform: uppercase;
     color: #000000;
     background-color: #ffffff;
+    border: none;
 }
 
 .active {
@@ -139,38 +125,17 @@ body {
 }
 
 .services-link {
-    font-size: 50px;
-    line-height: 50px;
     color: #000000;
     text-decoration: none;
-}
-
-.services-description {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #444444;
 }
 
 .offer-description {
     font-size: 20px;
     line-height: 23px;
     color: #000000;
-    background: #F0F0F0;
+    background-color: #F0F0F0;
     text-decoration: none;
     text-transform: uppercase;
-}
-
-.contacts-title {
-    font-size: 50px;
-    font-weight: 50px;
-    color: #000000;
-    background-color: #ffffff;
-}
-
-.contacts-description {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #444444;
 }
 
 .contacts h3 {
@@ -184,23 +149,12 @@ body {
 
 .newsletter {
     color: #000000;
-    background: #F0F0F0;
-}
-
-.appointment-title {
-    font-size: 50px;
-    line-height: 50px;
-}
-
-.appointment-description {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    color: #444444;
+    background-color: #F0F0F0;
 }
 
 .page-footer {
     color: #ffffff;
-    background: #444444;
+    background-color: #444444;
 }
 
 .about-text {
@@ -209,26 +163,82 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .footer-services-link {
     font-weight: 800;
     font-size: 18px;
     line-height: 21px;
-    color: #FFFFFF;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.footer-phone .about-text {
-    color: #FFFFFF;
+.footer-phone {
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.pagination {
+    background: #EBEBEB;
+}
+
+/* catalog */
+
+.breadcrumbs-link {
+    font-family: "Rubik", sans-serif;
+    font-style: normal;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
     text-decoration: none;
+}
+
+.catalog-filter {
+    font-size: 16px;
+    line-height: 19px;
     text-transform: uppercase;
 }
 
-.navigation {
-    background-color: #FFE17F ;
-    width: 1160px;
-    margin: 0 auto;
+.pagination-link {
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.product-card-link {
+    font-family: "Rubik", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+/* font */
+
+.description {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.product-card-price {
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.high-fonts {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.download-span {
+    font-size: 16px;
+    line-height: 19px;
 }
