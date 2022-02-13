@@ -178,6 +178,9 @@ body {
 }
 
 .footer-phone {
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
