@@ -69,6 +69,8 @@ body {
 
 .navigation-form-button {
     font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
     font-weight: 400;
     background: none;
     border: none;
@@ -210,7 +212,7 @@ body {
     text-decoration: none;
 }
 
-.product-card-link {
+.product-card {
     font-family: "Rubik", sans-serif;
     font-weight: 700;
     font-size: 18px;
@@ -224,6 +226,7 @@ body {
 
 .description {
     font-family: "Rubik", sans-serif;
+    font-style: normal;
     font-weight: 400;
     color: #444444;
 }
