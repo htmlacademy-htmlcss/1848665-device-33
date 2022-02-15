@@ -30,221 +30,255 @@
     font-display: swap;
 }
 
-/* глобальное */
+/* Глобальное */
+
+html {
+  height: 100%;
+}
 
 body {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 30px;
-    color: #000000;
-    margin: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
 }
 
 .button {
-    line-height: 21px;
-    color: #000000;
-    background-color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-    border: none;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
 }
 
 .grey-button {
-    line-height: 21px;
-    color: #000000;
-    text-decoration: none;
-    border: none;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  border: none;
 }
 
 .pagination-span {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 
-/* header */
+/* Шапка */
+
+.navigation {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+.navigation-button-container {
+  display: flex;
+}
+
+.navigation-container {
+  display: flex;
+}
+
+.navigation-list {
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+}
 
 .navigation-form-button {
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    background: none;
-    border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  background: none;
+  border: none;
 }
 
 .navigation-link {
-    font-weight: 800;
-    line-height: 21px;
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-weight: 800;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropdown-list-category {
+  display: none;
 }
 
 .dropdown-item {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 /* main */
 
+.main-container {
+  flex-grow: 1;
+}
+
 .slider-specifications {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-size: 36px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
 }
 
 .slider-specifications-low {
-    font-size: 16px;
-    color: #444444;
+  font-size: 16px;
+  color: #444444;
 }
 
 .category-description {
-    line-height: 24px;
-    color: #000000;
-    text-decoration: none;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
 }
 
 .button-tabs {
-    font-family: "Raleway", sans-serif;
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    text-transform: uppercase;
-    color: #000000;
-    background-color: #ffffff;
-    border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #ffffff;
+  border: none;
 }
 
 .active {
-    color: #FFE17F;
-    background-color: #000000;
+  color: #FFE17F;
+  background-color: #000000;
 }
 
 .services-link {
-    color: #000000;
-    text-decoration: none;
+  color: #000000;
+  text-decoration: none;
 }
 
 .offer-description {
-    font-size: 20px;
-    line-height: 23px;
-    color: #000000;
-    background-color: #F0F0F0;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-size: 20px;
+  line-height: 23px;
+  color: #000000;
+  background-color: #F0F0F0;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .contacts h3 {
-    font-size: 24px;
-    color: #444444;
+  font-size: 24px;
+  color: #444444;
 }
 
 .contacts-description-tel {
-    text-decoration-line: underline;
+  text-decoration-line: underline;
 }
 
 .newsletter {
-    color: #000000;
-    background-color: #F0F0F0;
+  color: #000000;
+  background-color: #F0F0F0;
 }
 
 .page-footer {
-    color: #ffffff;
-    background-color: #444444;
+  color: #ffffff;
+  background-color: #444444;
 }
 
 .about-text {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
 }
 
 .footer-services-link {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 21px;
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .footer-phone {
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #ffffff;
-    text-decoration: underline;
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .pagination {
-    background: #EBEBEB;
+  background: #EBEBEB;
 }
 
 /* catalog */
 
 .breadcrumbs-link {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    color: #000000;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  color: #000000;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
 }
 
 .catalog-filter {
-    font-size: 16px;
-    line-height: 19px;
-    text-transform: uppercase;
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
 }
 
 .pagination-link {
-    font-size: 16px;
-    line-height: 20px;
-    text-decoration: none;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
 }
 
 .product-card {
-    font-family: "Rubik", sans-serif;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 20px;
-    text-decoration: none;
-    color: #000000;
-    background-color: #ffffff;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 /* font */
 
 .description {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    color: #444444;
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #444444;
 }
 
 .product-card-price {
-    font-size: 18px;
-    line-height: 21px;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .high-fonts {
-    font-size: 50px;
-    line-height: 50px;
+  font-size: 50px;
+  line-height: 50px;
 }
 
 .download-span {
-    font-size: 16px;
-    line-height: 19px;
+  font-size: 16px;
+  line-height: 19px;
 }
