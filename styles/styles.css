@@ -395,7 +395,11 @@ body {
     background: #EBEBEB;
 }
 
-/* catalog */
+/* Страница каталога */
+
+.catalog-products {
+  display: flex;
+}
 
 .breadcrumbs-link {
     font-family: "Rubik", sans-serif;
@@ -413,6 +417,20 @@ body {
     text-transform: uppercase;
 }
 
+.catalog-filter-container {
+    width: 320px;
+}
+
+.catalog-select-container {
+    display: flex;
+    width: 840px;
+}
+
+.catalog-container {
+    width: 840px;
+    margin-right: 140px;
+}
+
 .pagination-link {
     font-size: 16px;
     line-height: 20px;
@@ -427,6 +445,11 @@ body {
     text-decoration: none;
     color: #000000;
     background-color: #ffffff;
+}
+
+.pagination {
+    width: 760px;
+    margin-left: 360px;
 }
 
 /* font */
