@@ -6,8 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
-    <!-- header -->
+    <!-- Шапка страницы -->
     <header>
       <nav>
         <div class="page-container navigation-background">
@@ -77,36 +76,26 @@
         </div>
       </nav>
     </header>
-
-    <!-- main -->
+    <!-- Основной контент страницы -->
     <main class="main-container">
       <h1 class="visually-hidden" hidden>Интернет-магазина гаджетов 'Девайс'</h1>
+      <!-- Cлайдер -->
       <section class="slider">
         <div class="page-container">
           <h2 class="visually-hidden" hidden>Популярные товары</h2>
+          <!-- Стрелки для перехода к предыдущему и следующему слайду -->
+          <button class="slider-button-back">
+          <span class="visually-hidden">Предыдущий слайд</span>
+          </button>
+          <button class="slider-button-forth">
+          <span class="visually-hidden">Следующий слайд</span>
+          </button>
           <div class="slider-wrapper">
-            <div class="slide-container">
-              <button class="slider-button-back">
-                <span class="visually-hidden">Предыдущий слайд</span>
-              </button>
-              <ol class="slider-image-list">
-                <li class="slider-img-item">
-                  <img src="images/slider/quadrocopter.png" width="560" height="560" alt="Черный квадрокоптер с белым корпусом, стреляющий оснащенным лазером">
-                </li>
-                <li class="slider-image-list">
-                  <img src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Черный Фитнес-браслет с мотивирующими к похудению репликами на дисплее">
-                </li>
-                <li class="slider-image-list">
-                  <img src="images/slider/selfie-stick.png" width="560" height="560" alt="Длинная черная селфи-палка с синими декоративными элементами">
-                </li>
-              </ol>
-              <button class="slider-button-forth">
-                <span class="visually-hidden">Следующий слайд</span>
-              </button>
-            </div>
-            <div class="slide-content-container">
-              <ol class="slider-list">
-                <li class="slider-item">
+            <div class="slider-items">
+              <div class="slider-item-active">
+                <!-- Контент 1 слайда -->
+                <img src="images/slider/quadrocopter.png" width="560" height="560" alt="Черный квадрокоптер с белым корпусом, стреляющий оснащенным лазером">
+                <div class="slide-content">
                   <h3 class="visually-hidden" hidden>Квадрокоптер</h3>
                   <p class="high-fonts">Порхает как бабочка, жалит как пчела!</p>
                   <p class="description">
@@ -121,8 +110,12 @@
                     <dt class="slider-specifications-low">Радиус поражения</dt>
                     <dd>50 м</dd>
                   </dl>
-                </li>
-                <li class="slider-item">
+                </div>
+              </div>
+              <div class="slider-item">
+                <!-- Контент 2 слайда -->
+                <img src="images/slider/fitness-bracelet.png" width="560" height="560" alt="Черный Фитнес-браслет с мотивирующими к похудению репликами на дисплее">
+                <div class="slide-content">
                   <h3 class="visually-hidden" hidden>Фитнес-браслет</h3>
                   <p class="high-fonts">Худеем правильно!</p>
                   <p class="description">
@@ -133,8 +126,12 @@
                     <dt class="slider-specifications-low">Без подзарядки</dt>
                     <dd>48 часов</dd>
                   </dl>
-                </li>
-                <li class="slider-item">
+                </div>
+              </div>
+              <div class="slider-item">
+                <!-- Контент 3 слайда -->
+                <img src="images/slider/selfie-stick.png" width="560" height="560" alt="Длинная черная селфи-палка с синими декоративными элементами">
+                <div class="slide-content">
                   <h3 class="visually-hidden" hidden>Селфи-палка</h3>
                   <p class="high-fonts">Делай селфи, как Бен Стиллер! </p>
                   <p class="description">
@@ -153,8 +150,8 @@
                     <dt class="slider-specifications-low">Материал</dt>
                     <dd>Карбон</dd>
                   </dl>
-                </li>
-              </ol>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -184,33 +181,30 @@
           </ul>
         </div>
       </section>
-      <section class="services">
-        <h2 class="visually-hidden" hidden>Услуги</h2>
+      <section class="tabs">
         <div class="page-container">
-          <div class="services-wrapper">
-            <div class="button-tabs-container">
-              <button class="button-tabs active">Доставка</button>
-              <button class="button-tabs">Гарантия</button>
-              <button class="button-tabs">Кредит</button>
+          <h2 class="visually-hidden" hidden>Услуги</h2>
+          <div class="tab-wrapper">
+            <input type="radio" name="tab" id="tab1" checked>
+            <label class="tab-label no-select" for="tab1" nth="1">Доставка</label>
+            <div class="tab-item" id="tab-content1">
+              <h3 class="high-fonts">Доставка</h3>
+              <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
+                Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
             </div>
-            <div class="content-tabs-container">
-              <ol class="services-list">
-                <li class="services-item">
-                  <h3 class="high-fonts">Доставка</h3>
-                  <p class="description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                    Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-                </li>
-                <li class="services-item">
-                  <h3 class="high-fonts">Гарантия</h3>
-                  <p class="description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-                    Товар, не дом, конечно же.</p>
-                </li>
-                <li class="services-item">
-                  <h3 class="high-fonts">Кредит</h3>
-                  <p class="description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                    условия кредита. Выгодные для банка, разумеется.</p>
-                </li>
-              </ol>
+            <input type="radio" name="tab" id="tab2">
+            <label class="tab-label no-select" for="tab2" nth="2">Гарантия</label>
+            <div class="tab-item" id="tab-content2">
+              <h3 class="high-fonts">Гарантия</h3>
+              <p class="description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+            </div>
+            <input type="radio" name="tab" id="tab3">
+            <label class="tab-label no-select" for="tab3" nth="3">Кредит</label>
+            <div class="tab-item" id="tab-content3">
+              <h3 class="high-fonts">Кредит</h3>
+              <p class="description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                условия кредита. Выгодные для банка, разумеется.</p>
             </div>
           </div>
         </div>
@@ -263,8 +257,7 @@
         </div>
       </div>
     </main>
-
-    <!-- footer -->
+    <!-- Подвал сайта -->
     <footer class="page-footer">
       <div class="page-container">
         <a href="index.html" aria-current="page">
