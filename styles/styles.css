@@ -48,6 +48,17 @@ body {
     color: #000000;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Контейнеры */
 
 .main-container {
@@ -66,10 +77,6 @@ body {
 .navigation-link-container {
     display: flex;
     margin: 0 60px;
-}
-
-.navigation-background {
-    background-color: #FFE17F;
 }
 
 .button {
@@ -102,48 +109,99 @@ body {
     margin: 0 60px;
 }
 
+.page-header {
+    position: relative;
+    margin-top: 40px;
+    min-height: 300px;
+    background-color: #FFE17F;
+}
+
+/* Навигация и основные кнопки  */
+
 .navigation-form {
     width: 517px;
+    margin-right: 26px;
+}
+
+.navigation-form-button {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+    padding: 10px 55.5px;
+    background: none;
+    border: none;
 }
 
 .navigation-list-login {
-    margin: 0;
-    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     width: 231px;
-}
-
-.navigation-list-user {
     margin: 0;
     padding: 0;
-    max-width: 240px;
-    margin-left: auto;
+    list-style-type: none;
 }
 
 .navigation-link-button {
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    display: block;
+    padding: 5px 0;
+    background: none;
+    border: none;
+}
+
+.navigation-link-login {
+    display: block;
+    padding: 5px 0;
+}
+
+.navigation-list-user {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 241px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    list-style-type: none;
+}
+
+/* Основное меню сайта */
+
+.navigation-link {
+    display: block;
+    padding: 15px 0;
+    margin-right: 7px;
     width: 236px;
+    font-weight: 800;
+    line-height: 21px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .navigation-item-button {
     width: 50px;
 }
 
-.navigation-list {
+.navigation-list-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 471px;
     margin: 0;
     padding: 0;
-    max-width: 471px;
     margin-left: auto;
+    list-style-type: none;
 }
 
-.navigation-form-button {
-    font-family: "Rubik", sans-serif;
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 400;
-    background: none;
-    border: none;
-}
-
-.navigation-link {
+.navigation-link-menu {
+    display: block;
+    padding: 15px 0;
     font-weight: 800;
     line-height: 21px;
     color: #000000;
@@ -163,6 +221,11 @@ body {
 }
 
 /* Cлайдер */
+
+.slider {
+    position: relative;
+    top: -150px;
+}
 
 .slider-item {
     display: none;

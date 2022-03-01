@@ -6,82 +6,82 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-
-    <!-- header -->
+    <!-- Шапка страницы -->
     <header>
       <nav>
-        <div class="page-container navigation-background">
-          <a href="index.html">
-            <img class="logo" src="images/logo/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов 'Девайс'">
-          </a>
-          <div class="navigation-button-container">
-            <form class="navigation-form" action="https://echo.htmlacademy.ru" method="get">
-              <input type="search" name="search" placeholder="Текст поиска">
-              <button class="navigation-form-button">Найти</button>
-            </form>
-            <ul class="navigation-list-login">
-              <li class="navigation-item-user">
-                <a class="navigation-form-button services-link" href="#">Коля Петухов</a>
-              </li>
-              <li class="navigation-item-user">
-                <a class="navigation-form-button services-link" href="#">Выйти</a>
-              </li>
-            </ul>
-            <ul class="navigation-list-user">
-              <li class="navigation-item-user">
-                <button class="navigation-form-button">Сравнить</button>
-              </li>
-              <li class="navigation-item-user">
-                <button class="navigation-form-button">Корзина</button>
-              </li>
-            </ul>
-          </div>
-          <div class="navigation-link-container">
-            <a class="navigation-link navigation-link-button" href="catalog.html" aria-current="page">Каталог товаров</a>
-            <button class="navigation-item-button">
-              <span class="visually-hidden">Открыть выпадающее меню</span>
-            </button>
-            <ul class="dropdown-list-category">
-              <li class="dropdown-item">
-                <a href="#" class="services-link">Виртуальная реальность</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="services-link">Моноподы для селфи</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="services-link">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul class="dropdown-list-category">
-              <li class="dropdown-item">
-                <a href="#" class="services-link">Фитнес-браслеты</a>
-              </li>
-              <li class="dropdown-item">
-                <a href="#" class="services-link">Умные часы</a>
-              </li>
-            </ul>
-            <ul class="dropdown-list-category">
-              <li class="dropdown-item">
-                  <a href="#" class="services-link">Квадрокоптеры</a>
-              </li>
-            </ul>
-            <ul class="navigation-list">
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Доставка</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Гарантия</a>
-              </li>
-              <li class="navigation-item">
-                <a class="navigation-link" href="#">Контакты</a>
-              </li>
-            </ul>
+        <div class="page-container">
+          <div class="page-header">
+            <a href="index.html">
+              <img class="logo" src="images/logo/logo-header.svg" width="145" height="36" alt="Логотип интернет-магазина гаджетов 'Девайс'">
+            </a>
+            <div class="navigation-button-container">
+              <form class="navigation-form" action="https://echo.htmlacademy.ru" method="get">
+                <input type="search" name="search" placeholder="Текст поиска">
+                <button class="navigation-form-button">Найти</button>
+              </form>
+              <ul class="navigation-list-login">
+                <li class="navigation-item-login">
+                  <a class="navigation-link-button services-link" href="#">Коля Петухов</a>
+                </li>
+                <li class="navigation-item-login">
+                  <a class="navigation-link-button services-link" href="#">Выйти</a>
+                </li>
+              </ul>
+              <ul class="navigation-list-user">
+                <li class="navigation-item-user">
+                  <button class="navigation-link-button">Сравнить</button>
+                </li>
+                <li class="navigation-item-user">
+                  <button class="navigation-link-button">Корзина</button>
+                </li>
+              </ul>
+            </div>
+            <div class="navigation-link-container">
+              <a class="navigation-link" href="catalog.html" aria-current="page">Каталог товаров</a>
+              <button class="navigation-item-button">
+                <span class="visually-hidden">Открыть выпадающее меню</span>
+              </button>
+              <ul class="dropdown-list-category">
+                <li class="dropdown-item">
+                  <a href="#" class="services-link">Виртуальная реальность</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="services-link">Моноподы для селфи</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="services-link">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul class="dropdown-list-category">
+                <li class="dropdown-item">
+                  <a href="#" class="services-link">Фитнес-браслеты</a>
+                </li>
+                <li class="dropdown-item">
+                  <a href="#" class="services-link">Умные часы</a>
+                </li>
+              </ul>
+              <ul class="dropdown-list-category">
+                <li class="dropdown-item">
+                    <a href="#" class="services-link">Квадрокоптеры</a>
+                </li>
+              </ul>
+              <ul class="navigation-list-menu">
+                <li class="navigation-item">
+                  <a class="navigation-link-menu" href="#">Доставка</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link-menu" href="#">Гарантия</a>
+                </li>
+                <li class="navigation-item">
+                  <a class="navigation-link-menu" href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
     </header>
-
-    <!-- main -->
+    <!-- Основной контент страницы -->
     <main class="main-container">
       <header>
         <div class="breadcrumbs-container">
@@ -102,7 +102,7 @@
       <div class="catalog-wrapper">
         <div class="page-container catalog-products">
           <section class="catalog-filter-products">
-            <h2 class="visually-hidden" hidden>Список товаров с фильтрами</h2>
+            <h2 class="visually-hidden">Список товаров с фильтрами</h2>
             <h3 class="catalog-filter">фильтр:</h3>
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru" method="get">
               <fieldset class="catalog-filter-group">
@@ -240,8 +240,7 @@
         </div>
       </div>
     </main>
-
-    <!-- footer -->
+    <!-- Подвал сайта -->
     <footer class="page-footer">
       <div class="page-container">
         <a href="index.html" aria-current="page">
