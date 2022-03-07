@@ -71,12 +71,12 @@ body {
 
 .navigation-button-container {
     display: flex;
-    margin: 0 60px;
+    padding: 44px 60px 30px 60px;
 }
 
 .navigation-link-container {
     display: flex;
-    margin: 0 60px;
+    padding: 0 60px 0 60px;
 }
 
 .button {
@@ -105,15 +105,27 @@ body {
 
 /* Шапка страницы */
 
-.logo {
+.header-logo {
+    position: absolute;
+    top: -23.5px;
     margin: 0 60px;
 }
 
-.page-header {
+.navigation-header {
     position: relative;
     margin-top: 40px;
-    min-height: 300px;
+    padding-bottom: 136px;
+    margin-bottom: -150px;
     background-color: #FFE17F;
+    box-sizing: border-box;
+}
+
+.navigation-header-catalog {
+    position: relative;
+    margin-top: 40px;
+    padding-bottom: 23px;
+    background-color: #FFE17F;
+    box-sizing: border-box;
 }
 
 /* Навигация и основные кнопки  */
@@ -224,7 +236,6 @@ body {
 
 .slider {
     position: relative;
-    top: -150px;
 }
 
 .slider-item {
@@ -236,8 +247,8 @@ body {
 }
 
 .slide-content {
-  width: 560px;
-  margin-left: 40px;
+    width: 560px;
+    margin-left: 40px;
 }
 
 .slider-specifications {
@@ -265,13 +276,22 @@ body {
     top: 60px;
 }
 
-/* Список категорий */
+.slider-description {
+    margin: 0;
+}
+
+/* Список категорий каталога */
+
+.category-container {
+    margin: 70px auto;
+}
 
 .category-list {
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .category-item {
@@ -288,6 +308,7 @@ body {
 
 .services-wrapper {
     display: flex;
+    height: 319px;
 }
 
 .services {
@@ -300,8 +321,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     text-transform: uppercase;
+    background: none;
     color: #000000;
-    background-color: #ffffff;
     border: none;
 }
 
@@ -310,12 +331,35 @@ body {
     background-color: #000000;
 }
 
+.services-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .button-tabs-list {
-    margin: 0;
+    width: 280px;
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 0;
+    list-style-type: none;
+}
+
+.content-tabs-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 880px;
+    margin-left: 116px;
 }
 
 .services-list {
+    display: flex;
+    align-items: center;
+    width: 694px;
+    height: 174px;
     margin: 0;
     padding: 0;
 }
@@ -333,12 +377,15 @@ body {
     display: block;
 }
 
-.offer {
-    display: flex;
-    background-color: #FFFFFF;
+.tabs-description {
+    margin: 0;
 }
 
-.offer-background {
+/* Специальное предложение доставки */
+
+.offer {
+    padding: 40px 125px 40px 125px;
+    margin: 70px auto;
     text-align: center;
     background-color: #F0F0F0;
 }
@@ -352,27 +399,49 @@ body {
     margin: 0 auto;
 }
 
+/* Информация о нас */
+
 .about-wrapper {
     display: flex;
+    margin-bottom: 70px;
 }
+
+.about-description {
+    margin: 0;
+}
+
+.about {
+    width: 520px;
+}
+
+.contacts {
+    width: 532px;
+    margin-left: auto;
+}
+
+/* Предложение подписаться */
 
 .newsletter {
    background-color: #F0F0F0;
+   height: 421px;
 }
 
 .newsletter-container {
     display: flex;
+    margin-bottom: 144px;
 }
 
 .newsletter-title {
     width: 348px;
+    margin-top: 64px;
     margin-left: 147px;
     margin-right: 252px;
 }
 
 .newsletter-description {
     width: 560px;
-
+    margin: 0;
+    margin-top: 74px;
 }
 
 .newsletter-form-container {
@@ -397,6 +466,8 @@ body {
     background-color: #F0F0F0;
 }
 
+/* Подвал сайта */
+
 .page-footer {
     color: #ffffff;
     background-color: #444444;
@@ -407,12 +478,35 @@ body {
     justify-content: space-between;
 }
 
+.footer-address {
+    width: 234px;
+    height: 182px;
+    margin-top: 62px;
+    margin-bottom: 77px;
+}
+
+.footer-social-list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
 .footer-services-list {
     width: 444px;
     display: flex;
     justify-content: space-between;
     margin: 0;
     padding: 0;
+    margin-top: 137px;
+    margin-bottom: 62px;
+    list-style-type: none;
+}
+
+.footer-phone-container {
+    width: 175px;
+    height: 116px;
+    margin-top: 140px;
+    margin-bottom: 65px;
 }
 
 .about-text {
@@ -453,19 +547,6 @@ body {
     margin-left: auto;
 }
 
-.pagination {
-    width: 760px;
-    display: flex;
-    justify-content: space-between;
-    background-color: #EBEBEB;
-    margin: 0 auto;
-}
-
-.pagination-list {
-    margin: 0;
-    padding: 0;
-}
-
 /* Страница каталога */
 
 .catalog-products {
@@ -484,6 +565,8 @@ body {
 .breadcrumbs-container {
     width: 1079px;
     margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 35px;
 }
 
 .catalog-wrapper {
@@ -491,6 +574,7 @@ body {
 }
 
 .catalog-products-select {
+    width: 840px;
     background-color: #F0F0F0;
     display: flex;
     justify-content: space-between;
@@ -499,11 +583,22 @@ body {
 .product-list {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
 
 .product-list-container {
     width: 760px;
     margin: 40px 40px;
+}
+
+.breadcrumbs-list {
+    width: 432px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    padding-top: 16px;
+    list-style-type: none;
 }
 
 .breadcrumbs-link {
@@ -517,20 +612,56 @@ body {
 }
 
 .catalog-filter {
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.catalog-filter-select {
     width: 147px;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
+    padding: 25.5px 0 25.5px 40px;
+}
 
+.select-control {
+    width: 160px;
+    height: 50px;
+    margin: 20px 300px 20px 200px;
 }
 
 .catalog-filter-container {
     width: 320px;
 }
 
+.pagination {
+  width: 760px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #EBEBEB;
+  margin: 0 auto;
+}
+
+.pagination-list {
+  width: 200px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-top: 15.5px;
+  margin-bottom: 15.5px;
+  align-items: center;
+}
+
 .pagination-link {
+    display: block;
+    box-sizing: border-box;
     font-size: 16px;
     line-height: 20px;
+    padding: 10px 15px;
+    width: 40px;
+    height: 40px;
     text-decoration: none;
 }
 
@@ -561,6 +692,11 @@ body {
 .high-fonts {
     font-size: 50px;
     line-height: 50px;
+}
+
+.header-text {
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .download-span {
