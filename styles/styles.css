@@ -59,6 +59,11 @@ body {
     overflow: hidden;
 }
 
+.header-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 /* Контейнеры */
 
 .main-container {
@@ -71,12 +76,12 @@ body {
 
 .navigation-button-container {
     display: flex;
-    padding: 44px 60px 30px 60px;
+    margin-bottom: 30px;
 }
 
 .navigation-link-container {
     display: flex;
-    padding: 0 60px 0 60px;
+    padding: 0;
 }
 
 .button {
@@ -106,25 +111,22 @@ body {
 /* Шапка страницы */
 
 .header-logo {
-    position: absolute;
-    top: -23.5px;
-    margin: 0 60px;
+    margin-bottom: 30px;
 }
 
 .navigation-header {
     position: relative;
-    margin-top: 40px;
-    padding-bottom: 136px;
     margin-bottom: -150px;
-    background-color: #FFE17F;
+    padding: 0 60px 136px 60px;
+    background-image: linear-gradient(to bottom,#ffffff 23px,#FFE17F 23px);
     box-sizing: border-box;
 }
 
 .navigation-header-catalog {
     position: relative;
-    margin-top: 40px;
-    padding-bottom: 23px;
-    background-color: #FFE17F;
+    margin-bottom: 35px;
+    padding: 0 60px 23px 60px;
+    background-image: linear-gradient(to bottom,#ffffff 23px,#FFE17F 23px);
     box-sizing: border-box;
 }
 
@@ -236,6 +238,7 @@ body {
 
 .slider {
     position: relative;
+    margin-bottom: 70px;
 }
 
 .slider-item {
@@ -248,6 +251,7 @@ body {
 
 .slide-content {
     width: 560px;
+    padding-top: 122px;
     margin-left: 40px;
 }
 
@@ -260,6 +264,7 @@ body {
 .slider-specifications-low {
     font-size: 16px;
     color: #444444;
+    order: 2;
 }
 
 .slider-button-back {
@@ -280,10 +285,42 @@ body {
     margin: 0;
 }
 
+.slider-title {
+    margin-bottom: 29px;
+}
+
+.slide-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.slider-text {
+    margin-bottom: 51px;
+}
+
+.slider-button {
+    margin-bottom: 49px;
+}
+
+.description-list {
+    display: flex;
+    gap: 20px;
+}
+
+.slider-specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.slider-specifications-value {
+    margin: 0;
+}
+
 /* Список категорий каталога */
 
 .category-container {
-    margin: 70px auto;
+    margin-bottom: 70px;
 }
 
 .category-list {
@@ -313,6 +350,7 @@ body {
 
 .services {
     background: linear-gradient(to bottom, #FFFFFF 50%, #F0F0F0 50%);
+    margin-bottom: 70px;
 }
 
 .button-tabs {
@@ -322,6 +360,7 @@ body {
     line-height: 21px;
     text-transform: uppercase;
     background: none;
+    margin-bottom: 35px;
     color: #000000;
     border: none;
 }
@@ -337,12 +376,16 @@ body {
     justify-content: center;
 }
 
+.tabs-title {
+    margin-bottom: 34px;
+}
+
 .button-tabs-list {
     width: 280px;
-    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
@@ -378,6 +421,7 @@ body {
 }
 
 .tabs-description {
+    width: 452px;
     margin: 0;
 }
 
@@ -385,7 +429,7 @@ body {
 
 .offer {
     padding: 40px 125px 40px 125px;
-    margin: 70px auto;
+    margin-bottom: 70px;
     text-align: center;
     background-color: #F0F0F0;
 }
@@ -419,11 +463,15 @@ body {
     margin-left: auto;
 }
 
+.about-title {
+    margin-top: 47px;
+    margin-bottom: 48px;
+}
+
 /* Предложение подписаться */
 
 .newsletter {
    background-color: #F0F0F0;
-   height: 421px;
 }
 
 .newsletter-container {
@@ -434,7 +482,6 @@ body {
 .newsletter-title {
     width: 348px;
     margin-top: 64px;
-    margin-left: 147px;
     margin-right: 252px;
 }
 
@@ -446,6 +493,7 @@ body {
 
 .newsletter-form-container {
     display: flex;
+    padding-bottom: 56px;
 }
 
 .newsletter-description-span {
@@ -479,10 +527,7 @@ body {
 }
 
 .footer-address {
-    width: 234px;
-    height: 182px;
-    margin-top: 62px;
-    margin-bottom: 77px;
+    margin-top: 133px;
 }
 
 .footer-social-list {
@@ -503,10 +548,7 @@ body {
 }
 
 .footer-phone-container {
-    width: 175px;
-    height: 116px;
     margin-top: 140px;
-    margin-bottom: 65px;
 }
 
 .about-text {
@@ -538,13 +580,36 @@ body {
     color: #ffffff;
     text-decoration: underline;
     margin-left: auto;
-
 }
 
-.logo-footer-htmlacademy {
-    display: block;
-    width: 114.9px;
-    margin-left: auto;
+.about-description-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 34px;
+    gap: 19px;
+}
+
+.about-description-title {
+    margin-bottom: 15px;
+}
+
+.footer-logo {
+    position: relative;
+    left: 270px;
+    bottom: -110px;
+}
+
+.footer-logo-htmlacademy {
+    margin-top: 63px;
 }
 
 /* Страница каталога */
@@ -555,6 +620,11 @@ body {
 
 .catalog-filter-products {
     width: 320px;
+    padding-left: 60px;
+}
+
+.catalog-filter {
+    padding: 25px 0 25px 0;
 }
 
 .catalog-products-sorting {
@@ -565,7 +635,7 @@ body {
 .breadcrumbs-container {
     width: 1079px;
     margin: 0 auto;
-    margin-top: 35px;
+    padding-left: 60px;
     margin-bottom: 35px;
 }
 
@@ -574,10 +644,11 @@ body {
 }
 
 .catalog-products-select {
-    width: 840px;
+    width: 760px;
     background-color: #F0F0F0;
     display: flex;
     justify-content: space-between;
+    padding: 20px 40px 20px 40px;
 }
 
 .product-list {
@@ -588,7 +659,7 @@ body {
 
 .product-list-container {
     width: 760px;
-    margin: 40px 40px;
+    padding: 70px 40px 44px 40px;
 }
 
 .breadcrumbs-list {
@@ -618,17 +689,9 @@ body {
 }
 
 .catalog-filter-select {
-    width: 147px;
     font-size: 16px;
     line-height: 19px;
     text-transform: uppercase;
-    padding: 25.5px 0 25.5px 40px;
-}
-
-.select-control {
-    width: 160px;
-    height: 50px;
-    margin: 20px 300px 20px 200px;
 }
 
 .catalog-filter-container {
@@ -641,17 +704,18 @@ body {
   justify-content: space-between;
   background-color: #EBEBEB;
   margin: 0 auto;
+  margin-bottom: 78px;
 }
 
 .pagination-list {
-  width: 200px;
-  display: flex;
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  margin-top: 15.5px;
-  margin-bottom: 15.5px;
-  align-items: center;
+    width: 200px;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 15.5px;
+    margin-bottom: 15.5px;
+    align-items: center;
 }
 
 .pagination-link {
@@ -675,6 +739,16 @@ body {
     background-color: #ffffff;
 }
 
+.catalog-filter-group {
+    border: 0 none;
+}
+
+.catalog-filter-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
 /* font */
 
 .description {
@@ -694,11 +768,6 @@ body {
     line-height: 50px;
 }
 
-.header-text {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .download-span {
     font-size: 16px;
     line-height: 19px;
@@ -707,4 +776,5 @@ body {
 .download-button {
     background-color: #F0F0F0;
     width: 760px;
+    padding: 18px 294.5px 18px 294.5px;
 }
