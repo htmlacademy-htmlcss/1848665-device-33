@@ -447,6 +447,7 @@ body {
 
 .about-wrapper {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 70px;
 }
 
@@ -460,7 +461,6 @@ body {
 
 .contacts {
     width: 532px;
-    margin-left: auto;
 }
 
 .about-title {
@@ -474,6 +474,10 @@ body {
    background-color: #F0F0F0;
 }
 
+.newsletter-wrapper {
+    padding: 64px 0 56px 0;
+}
+
 .newsletter-container {
     display: flex;
     margin-bottom: 144px;
@@ -481,19 +485,17 @@ body {
 
 .newsletter-title {
     width: 348px;
-    margin-top: 64px;
     margin-right: 252px;
 }
 
 .newsletter-description {
     width: 560px;
     margin: 0;
-    margin-top: 74px;
+    margin-top: 10px;
 }
 
 .newsletter-form-container {
     display: flex;
-    padding-bottom: 56px;
 }
 
 .newsletter-description-span {
@@ -604,7 +606,6 @@ body {
 
 .footer-logo {
     position: relative;
-    left: 270px;
     bottom: -110px;
 }
 
