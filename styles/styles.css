@@ -40,6 +40,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
+    min-width: 1160px;
     min-height: 100%;
     font-family: "Raleway", sans-serif;
     font-weight: 800;
@@ -521,16 +522,15 @@ body {
 .page-footer {
     color: #ffffff;
     background-color: #444444;
+    padding: 62px 0 61px 0;
 }
 
 .footer-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-.footer-address {
-    margin-top: 133px;
-}
 
 .footer-social-list {
     display: flex;
@@ -544,13 +544,8 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
-    margin-top: 137px;
     margin-bottom: 62px;
     list-style-type: none;
-}
-
-.footer-phone-container {
-    margin-top: 140px;
 }
 
 .about-text {
@@ -559,9 +554,8 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
-    width: 239px;
+    width: 300px;
     color: #ffffff;
-    margin-right: 112px;
 }
 
 .footer-services-link {
@@ -584,6 +578,11 @@ body {
     margin-left: auto;
 }
 
+.footer-phone-container {
+    width: 300px;
+    text-align: right;
+}
+
 .about-description-wrapper {
     display: flex;
     flex-direction: column;
@@ -604,13 +603,12 @@ body {
     margin-bottom: 15px;
 }
 
-.footer-logo {
-    position: relative;
-    bottom: -110px;
-}
-
 .footer-logo-htmlacademy {
     margin-top: 63px;
+}
+
+.footer-logo {
+  margin-bottom: 35px;
 }
 
 /* Страница каталога */
@@ -748,6 +746,10 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
+}
+
+.footer-address {
+    align-self: normal;
 }
 
 /* font */
