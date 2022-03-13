@@ -629,8 +629,8 @@ body {
 }
 
 .catalog-products-sorting {
-    width: 840px;
     background-color: #FFFFFF;
+    padding: 70px 40px 78px 40px;
 }
 
 .breadcrumbs-container {
@@ -655,12 +655,13 @@ body {
 .product-list {
     margin: 0;
     padding: 0;
+    margin-bottom: 44px;
     list-style-type: none;
 }
 
 .product-list-container {
     width: 760px;
-    padding: 70px 40px 44px 40px;
+    margin-bottom: 44px;
 }
 
 .breadcrumbs-list {
@@ -705,7 +706,6 @@ body {
   justify-content: space-between;
   background-color: #EBEBEB;
   margin: 0 auto;
-  margin-bottom: 78px;
 }
 
 .pagination-list {
@@ -776,6 +776,6 @@ body {
 
 .download-button {
     background-color: #F0F0F0;
-    width: 760px;
+    width: 100%;
     padding: 18px 294.5px 18px 294.5px;
 }
